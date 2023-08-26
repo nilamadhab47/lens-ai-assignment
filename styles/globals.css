@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'tilda';
+  src: url(/public/fonts/font/TildaSans-Regular.woff2);
+}
+@font-face {
+  font-family: 'tildaSansB';
+  src: url(/public/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff);
+}
+@font-face {
+  font-family: 'tildaSansL';
+  src: url(/public/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Light.woff);
+}
+@font-face {
+  font-family: 'tildaSansR';
+  src: url(/public/fonts/TildaSans.07Web/TildaSans-Medium/TildaSans-Medium.woff);
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -13,15 +36,41 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    font-family: 'Poppins', sans-serif;
+
   }
+
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Poppins', sans-serif;
+
+}
+.hand-image {
+  position: absolute;
+    height: 78%;
+    width: 38%;
+    inset: 22% 0px 0px 62%;
+    color: transparent;
+    font-size: 16px;
+}
+
+.section {
+  padding: 105px 12rem;
+    margin-top: 8rem;
+}
+.sectionC {
+  padding: 105px 29rem;
+    margin-top: 8rem;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .section {
+    padding: 0;
+      margin-top: 8rem;
+  }
+  .sectionC {
+    padding: 105px 1rem;
+      margin-top: 8rem;
+  }
 }
