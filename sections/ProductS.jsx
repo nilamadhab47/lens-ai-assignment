@@ -11,7 +11,7 @@ const ProductS = () => {
                     <li key={index} className='flex flex-col justify-center items-center text-primaryT text-center'>
                         <img src={list.image} alt="image" className='w-[100px] h-[100px]' />
                         <span className='text-primaryT font-bold mt-8 text-xs lg:text-[16px]' style={{letterSpacing: "1px"}} dangerouslySetInnerHTML={{ __html: list.header }}/>
-                        <h4 className='lg:text-[40px] text-xl' style={{textDecoration: "underline"}}>{list.heading}</h4>
+                        <h4 className='lg:text-[40px] text-xl mb-8 mt-8' style={{textDecoration: "underline"}}>{list.heading}</h4>
                         <p className='pr-[4rem] pl-[4rem]'>{list.description}</p>
                     </li>
                 ))}
