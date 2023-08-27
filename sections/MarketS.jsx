@@ -4,7 +4,7 @@ import React from 'react';
 
 function MarketS() {
     return (
-        <div className="section font-tildaSansR">
+        <div className="section" id='market'>
             <h1 className="text-primaryT text-[52px]">Market</h1>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                 {Market.map((item, index) => (

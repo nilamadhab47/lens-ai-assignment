@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProductS = () => {
   return (
-    <div className='section'>
+    <div className='section' id='product'>
         <h2 className='text-primary lg:text-[52px] text-[30px]'>Products</h2>
         <div className="product-list mt-8">
             <ul className='flex flex-col md:flex-row'>

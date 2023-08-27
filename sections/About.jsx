@@ -1,9 +1,18 @@
 import React from "react";
+import { Parallax } from "react-parallax";
 
 const About = () => {
   return (
-    <div className="section bg-blue-700">
-      <div className="about-container bg-white text-black lg:mr-[20rem] lg:ml-[20rem] ml-4 mr-4 pr-4 pl-4 lg:pr-8 lg:pl-8 ">
+    <Parallax
+    bgImage="/images/bg.jpeg"
+    bgImageAlt="bg"
+    strength={800}
+    
+    >
+
+   
+    <div className="section" style={{position:"relative", zIndex:"12"}} id="about">
+      <div className="about-container bg-white text-black lg:mr-[10rem] lg:ml-[10rem] ml-4 mr-4 pr-4 pl-4 lg:pr-8 lg:pl-8 ">
         <h1 className="text-primaryT lg:text-[52px] text-[30px]  text-center mb-8 mt-8">About</h1>
         <p className="lg:text-2xl text-[18px] pb-8" style={{lineHeight:"1.6"}}>
           Neurodactyl is a technology start-up founded in 2023 by specialists in
@@ -21,6 +30,7 @@ const About = () => {
         </p>
       </div>
     </div>
+    </Parallax>
   );
 };
 

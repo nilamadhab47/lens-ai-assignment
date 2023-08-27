@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='sectionC'>
-      <h1 className='text-primary lg:text-[52px] text-[30px] text-center mb-8 '>Contact Us</h1>
+    <div className='sectionC' id='contacts'>
+      <h1 className='text-primary lg:text-[52px] text-[30px] text-center mb-8'>Contact Us</h1>
       <h2 className='lg:text-2xl text-[16px] text-center text-primary font-bold mb-8'>Any question about our products or technologies?
 <br/>Just text us!</h2>
       <div className="form">

@@ -7,7 +7,7 @@ const AdvantageS = () => {
   const bottomAdvantage = Advantage.slice(3);
 
   return (
-    <div className="section bg-primaryT text-white">
+    <div className="section bg-primaryT text-white" id="advantage">
       <h1 className="text-white lg:text-[52px] text-[30px">Advantage</h1>
       <div className="advantage-list mt-16 mb-8">
         <ul className="flex gap-[10rem] flex-col md:flex-row">
