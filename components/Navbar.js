@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import {AiOutlineMail} from "react-icons/ai"
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -113,7 +114,7 @@ const Navbar = () => {
               href="#email"
               className={activeSection === "email" ? "active" : ""}
             >
-              Email
+              <AiOutlineMail />
             </a>
           </li>
         </ul>
